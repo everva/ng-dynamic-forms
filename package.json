@@ -54,7 +54,6 @@
     "update:version": "schematics .:versioning --debug=false",
     "publish": "./publish.sh"
   },
-  "private": false,
   "dependencies": {
     "@angular/animations": "~10.0.4",
     "@angular/cdk": "^10.0.2",

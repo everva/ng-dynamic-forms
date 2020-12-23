@@ -151,13 +151,13 @@
           "options": {
             "tsConfig": "projects/ng-dynamic-forms/core/tsconfig.lib.json",
             "project": "projects/ng-dynamic-forms/core/ng-package.json"
-          }
-        ,          "configurations": {
+          },
+          "configurations": {
             "production": {
               "tsConfig": "projects/ng-dynamic-forms/core/tsconfig.lib.prod.json"
             }
           }
-},
+        },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
@@ -191,13 +191,13 @@
           "options": {
             "tsConfig": "projects/ng-dynamic-forms/ui-basic/tsconfig.lib.json",
             "project": "projects/ng-dynamic-forms/ui-basic/ng-package.json"
-          }
-        ,          "configurations": {
+          },
+          "configurations": {
             "production": {
               "tsConfig": "projects/ng-dynamic-forms/ui-basic/tsconfig.lib.prod.json"
             }
           }
-},
+        },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
@@ -231,13 +231,13 @@
           "options": {
             "tsConfig": "projects/ng-dynamic-forms/ui-bootstrap/tsconfig.lib.json",
             "project": "projects/ng-dynamic-forms/ui-bootstrap/ng-package.json"
-          }
-        ,          "configurations": {
+          },
+          "configurations": {
             "production": {
               "tsConfig": "projects/ng-dynamic-forms/ui-bootstrap/tsconfig.lib.prod.json"
             }
           }
-},
+        },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
@@ -271,13 +271,13 @@
           "options": {
             "tsConfig": "projects/ng-dynamic-forms/ui-foundation/tsconfig.lib.json",
             "project": "projects/ng-dynamic-forms/ui-foundation/ng-package.json"
-          }
-        ,          "configurations": {
+          },
+          "configurations": {
             "production": {
               "tsConfig": "projects/ng-dynamic-forms/ui-foundation/tsconfig.lib.prod.json"
             }
           }
-},
+        },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
@@ -311,13 +311,13 @@
           "options": {
             "tsConfig": "projects/ng-dynamic-forms/ui-ionic/tsconfig.lib.json",
             "project": "projects/ng-dynamic-forms/ui-ionic/ng-package.json"
-          }
-        ,          "configurations": {
+          },
+          "configurations": {
             "production": {
               "tsConfig": "projects/ng-dynamic-forms/ui-ionic/tsconfig.lib.prod.json"
             }
           }
-},
+        },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
@@ -351,13 +351,13 @@
           "options": {
             "tsConfig": "projects/ng-dynamic-forms/ui-kendo/tsconfig.lib.json",
             "project": "projects/ng-dynamic-forms/ui-kendo/ng-package.json"
-          }
-        ,          "configurations": {
+          },
+          "configurations": {
             "production": {
               "tsConfig": "projects/ng-dynamic-forms/ui-kendo/tsconfig.lib.prod.json"
             }
           }
-},
+        },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
@@ -391,13 +391,13 @@
           "options": {
             "tsConfig": "projects/ng-dynamic-forms/ui-material/tsconfig.lib.json",
             "project": "projects/ng-dynamic-forms/ui-material/ng-package.json"
-          }
-        ,          "configurations": {
+          },
+          "configurations": {
             "production": {
               "tsConfig": "projects/ng-dynamic-forms/ui-material/tsconfig.lib.prod.json"
             }
           }
-},
+        },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
@@ -431,13 +431,13 @@
           "options": {
             "tsConfig": "projects/ng-dynamic-forms/ui-ng-bootstrap/tsconfig.lib.json",
             "project": "projects/ng-dynamic-forms/ui-ng-bootstrap/ng-package.json"
-          }
-        ,          "configurations": {
+          },
+          "configurations": {
             "production": {
               "tsConfig": "projects/ng-dynamic-forms/ui-ng-bootstrap/tsconfig.lib.prod.json"
             }
           }
-},
+        },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
@@ -471,13 +471,13 @@
           "options": {
             "tsConfig": "projects/ng-dynamic-forms/ui-primeng/tsconfig.lib.json",
             "project": "projects/ng-dynamic-forms/ui-primeng/ng-package.json"
-          }
-        ,          "configurations": {
+          },
+          "configurations": {
             "production": {
               "tsConfig": "projects/ng-dynamic-forms/ui-primeng/tsconfig.lib.prod.json"
             }
           }
-},
+        },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
@@ -511,13 +511,13 @@
           "options": {
             "tsConfig": "projects/ng-dynamic-forms/ui-ngx-bootstrap/tsconfig.lib.json",
             "project": "projects/ng-dynamic-forms/ui-ngx-bootstrap/ng-package.json"
-          }
-        ,          "configurations": {
+          },
+          "configurations": {
             "production": {
               "tsConfig": "projects/ng-dynamic-forms/ui-ngx-bootstrap/tsconfig.lib.prod.json"
             }
           }
-},
+        },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
@@ -541,5 +541,8 @@
       }
     }
   },
-  "defaultProject": "ng-dynamic-forms"
+  "defaultProject": "ng-dynamic-forms",
+  "cli": {
+    "analytics": "2d725b32-5826-4cea-9eab-8f352d16e16f"
+  }
 }
