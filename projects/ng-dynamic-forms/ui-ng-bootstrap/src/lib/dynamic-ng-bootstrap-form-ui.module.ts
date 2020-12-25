@@ -24,6 +24,7 @@ import { DynamicNGBootstrapSelectComponent } from "./select/dynamic-ng-bootstrap
 import { DynamicNGBootstrapSwitchComponent } from "./switch/dynamic-ng-bootstrap-switch.component";
 import { DynamicNGBootstrapTextAreaComponent } from "./textarea/dynamic-ng-bootstrap-textarea.component";
 import { DynamicNGBootstrapTimePickerComponent } from "./timepicker/dynamic-ng-bootstrap-timepicker.component";
+import { NzSelectModule } from 'ng-zorro-antd/select';
 
 @NgModule({
     imports: [
@@ -34,7 +35,8 @@ import { DynamicNGBootstrapTimePickerComponent } from "./timepicker/dynamic-ng-b
         NgbRatingModule,
         NgbTimepickerModule,
         TextMaskModule,
-        DynamicFormsCoreModule
+        DynamicFormsCoreModule,
+        NzSelectModule
     ],
     declarations: [
         DynamicNGBootstrapCalendarComponent,

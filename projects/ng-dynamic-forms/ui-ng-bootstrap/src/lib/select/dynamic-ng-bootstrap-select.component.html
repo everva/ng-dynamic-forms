@@ -1,13 +1,23 @@
 <ng-container [formGroup]="group">
 
-    <select class="form-control" [class.is-invalid]="showErrorMessages" [compareWith]="model.compareWithFn"
-        [formControlName]="model.id" [id]="id" [name]="model.name" [ngClass]="getClass('element', 'control')"
-        [required]="model.required" [multiple]="model.multiple" [tabindex]="model.tabIndex" (blur)="onBlur($event)"
-        (change)="onChange($event)" (focus)="onFocus($event)">
+    <ng-container *ngIf="model.multiple !== true">
+        <select class="form-control" [class.is-invalid]="showErrorMessages" [compareWith]="model.compareWithFn"
+            [formControlName]="model.id" [id]="id" [name]="model.name" [ngClass]="getClass('element', 'control')"
+            [required]="model.required" [tabindex]="model.tabIndex" (blur)="onBlur($event)" (change)="onChange($event)"
+            (focus)="onFocus($event)">
 
-        <option *ngFor="let option of model.options$ | async" [disabled]="option.disabled" [ngValue]="option.value">
-            {{ option.label }}</option>
+            <option *ngFor="let option of model.options$ | async" [disabled]="option.disabled" [ngValue]="option.value">
+                {{ option.label }}</option>
+        </select>
+    </ng-container>
 
-    </select>
-
+    <ng-container *ngIf="model.multiple === true">
+        <nz-select class="form-control" [nzMode]="'multiple'" [compareWith]="model.compareWithFn" [id]="id"
+            [ngClass]="getClass('element', 'control')" [class.is-invalid]="showErrorMessages" nzPlaceHolder="Seçiniz"
+            [required]="model.required" [tabindex]="model.tabIndex" (blur)="onBlur($event)" (change)="onChange($event)"
+            (focus)="onFocus($event)" [nzNotFoundContent]="'Seçim yapılacak seçenek yok'" [formControlName]="model.id">
+            <nz-option *ngFor="let option of model.options$ | async" [nzLabel]=" option.label" [nzValue]="option.value">
+            </nz-option>
+        </nz-select>
+    </ng-container>
 </ng-container>

@@ -69,7 +69,8 @@ export const NG_BOOTSTRAP_SAMPLE_FORM_MODEL: DynamicFormControlModel[] = [
                         value: "storeroom"
                     }
                 ],
-                value: "single-room"
+                value: ["single-room"],
+                required: true
             }),
 
             new DynamicInputModel({
@@ -116,7 +117,7 @@ export const NG_BOOTSTRAP_SAMPLE_FORM_MODEL: DynamicFormControlModel[] = [
             {
                 match: MATCH_REQUIRED,
                 when: [
-                    {id: "firstName", value: "Test"}
+                    { id: "firstName", value: "Test" }
                 ]
             }
         ]

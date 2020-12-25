@@ -84,6 +84,7 @@
     "chart.js": "^2.9.3",
     "core-js": "^3.6.5",
     "foundation-sites": "^6.6.3",
+    "ng-zorro-antd": "^9.3.0",
     "ngx-bootstrap": "^5.6.1",
     "primeicons": "^4.0.0",
     "primeng": "^9.1.3",
